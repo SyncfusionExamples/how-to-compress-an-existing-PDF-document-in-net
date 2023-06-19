@@ -32,6 +32,7 @@ We will create a new .NET console application, add the Syncfusion PDF library pa
     options.RemoveMetadata = true;
     //Assign the compression option to the document.
     loadedDocument.Compress(options);
+    
     //Create file stream.
     using (FileStream outputFileStream = new FileStream(Path.GetFullPath(@"../../../Output.pdf"), FileMode.Create, FileAccess.ReadWrite)) {
         //Save the PDF document to file stream.

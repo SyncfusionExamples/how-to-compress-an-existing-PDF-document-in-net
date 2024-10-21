@@ -4,6 +4,7 @@ using Syncfusion.Pdf.Parsing;
 namespace CompressPDFSample {
     internal class Program {
         static void Main(string[] args) {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Your License Key");
 
             //Get stream from an existing PDF document. 
             FileStream documentStream = new FileStream(Path.GetFullPath("../../../PDF_succinctly.pdf"), FileMode.Open, FileAccess.Read);
